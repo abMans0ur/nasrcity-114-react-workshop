@@ -1,0 +1,35 @@
+.products{
+    width: 90%;
+    margin:60px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .product{
+        width: 300px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 1px 1px 1px 1px lightgray;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: contain;
+        }
+        .btns{
+            display: flex;
+            gap: 20px;
+            a,button{
+                cursor: pointer;
+                text-decoration: none;
+                border: none;
+                background-color: var(--secColor);
+                color: var(--mainColor);
+                padding: 7px 15px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

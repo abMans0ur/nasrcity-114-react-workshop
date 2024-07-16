@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  &::before {
+    width: 100%;
+    height: calc(100vh - 60px);
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-image: url("./../../Images/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    h1 {
+      font-size: 72px;
+      font-weight: 400;
+    }
+    h4 {
+      font-size: 40px;
+      font-weight: 300;
+    }
+    button {
+      padding: 7px 15px;
+      border: none;
+      background-color: #fff;
+      cursor: pointer;
+      font-size: 24px;
+    }
+  }
+}
